@@ -1,0 +1,42 @@
+%marginHeader {
+    margin-top: 120px;
+
+
+    @include sm{
+        margin-top: 80px;
+    }
+    @include xs{
+        margin-top: 80px;
+    }
+}
+
+%bannerTitle{
+    font-size: 5rem;
+    text-align: center;
+    color: $white-color;
+    line-height: 120%;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-shadow: 0px 2px 2px rgba($black-color, 0.4);
+    @include line(2);
+
+    @include sm{
+        font-size: 4rem;
+    }
+
+    @include xs{
+        font-size: 3rem;
+    }
+}
+
+%paddingElement{
+    padding: 100px 0;
+
+    @include sm{
+        padding: 50px 0;
+    }
+
+    @include xs{
+        padding: 50px 0;
+    }
+}

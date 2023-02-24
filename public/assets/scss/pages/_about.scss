@@ -1,0 +1,121 @@
+.about{
+    @extend %marginHeader;
+    overflow: hidden;
+    &__banner{
+        background: center / cover no-repeat url('../image/home-1.png');
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 40px 0;
+        &__title{
+            padding: 8% 0 6% 0;
+            @extend %bannerTitle;
+        }
+
+        &__link{
+            font-size: 1.3rem;
+            line-height: 150%;
+            color: rgba($white-color,0.7);
+            font-weight: 500;
+
+            &>a{
+                color: rgba($white-color,0.7);
+                font-weight: 500;
+
+                &:hover{
+                    color: $primary-color-2;
+                }
+            }
+        }
+
+    }
+
+    &__responsibility__wrapper{
+        @extend %paddingElement;
+        overflow: hidden;
+
+        .about__responsibility{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            &__left{
+                width: 54%;
+
+                &>p{
+                    font-size: 1.3rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    color: rgba($black-color,0.4);
+                    letter-spacing: 0.5px;
+                }
+
+                &>h2{
+                    @include elementTitle(rgba($text-color-2,0.9));
+                }
+
+                @include md{
+                    width: 54%;
+                }
+                @include sm{
+                    width: 100%;
+                }
+                @include xs{
+                    width: 100%;
+                }
+            }
+
+            &__img{
+                width: 40%;
+
+                @include md{
+                    width: 40%;
+
+                }
+                @include sm{
+                    width: 100%;
+                }
+                @include xs{
+                    width: 100%;
+                }
+            }
+        }
+
+        .about__responsibility__list{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            &__item{
+                width: 250px;
+                margin: 60px auto 0;
+                text-align: center;
+
+                &>h4{
+                    font-size: 1.6rem;
+                    color: $black-color;
+                    line-height: 150%;
+                    letter-spacing: 0.5px;
+                    font-weight: 600;
+                    margin: 10px 0;
+                }
+
+                &>p{
+                    font-size: 1.3rem;
+                    color: $text-color-3;
+                    line-height: 150%;
+                    letter-spacing: 0.5px;
+                    font-weight: 400;
+                    padding: 0 10px;
+                }
+            }
+
+
+        }
+    }
+}
