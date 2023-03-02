@@ -2,7 +2,7 @@
     <nav class="header-first">
         <ul class="menu-first">
             <li class="menu-first__item"><a href="{{route('about_us')}}">About us</a></li>
-            <li class="menu-first__item"><a href="#">Products</a></li>
+            <li class="menu-first__item"><a href="{{route('product')}}">Products</a></li>
             <li class="menu-first__item"><a href="#">Projects</a></li>
             <li class="menu-first__item"><a href="#">Articles</a></li>
             <li class="menu-first__item"><a href="#">Contact</a></li>
@@ -418,7 +418,7 @@
                                 </ul>
                                 <ul class="menu-mobile__nav">
                                     <li class="menu-mobile__nav__item"><a href="{{route('about_us')}}">About us</a></li>
-                                    <li class="menu-mobile__nav__item"><a href="#">Products</a></li>
+                                    <li class="menu-mobile__nav__item"><a href="{{route('product')}}">Products</a></li>
                                     <li class="menu-mobile__nav__item"><a href="#">Projects</a></li>
                                     <li class="menu-mobile__nav__item"><a href="#">Articles</a></li>
                                     <li class="menu-mobile__nav__item"><a href="#">Contact</a></li>

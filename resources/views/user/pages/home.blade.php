@@ -174,29 +174,71 @@
                 </div>
                 <div class="row">
                     <div class="col-12-xl col-12-lg col-12-md col-12-sm col-12-xs">
-                        <ul class="home__project__slider" data-aos="fade-up">
-                            <li class="home__project__slider__item">
+                        <ul draggable="false"  class="home__project__slider" data-aos="fade-up">
+                            <li draggable="false"  class="home__project__slider__item">
                                 <img src="{{asset('assets/image/qmg-5362-hdr.jpg')}}" alt="">
                                 <a href="#" class="home__project__slider__item__link">
                                     <span>Can Tho International Airport Station</span>
                                     <p>View detail</p>
                                 </a>
                             </li>
-                            <li class="home__project__slider__item">
+                            <li draggable="false"  class="home__project__slider__item">
                                 <img src="{{asset('assets/image/qmg-5362-hdr.jpg')}}" alt="">
                                 <a href="#" class="home__project__slider__item__link">
                                     <span>Can Tho International Airport Station</span>
                                     <p>View detail</p>
                                 </a>
                             </li>
-                            <li class="home__project__slider__item">
+                            <li draggable="false"  class="home__project__slider__item">
                                 <img src="{{asset('assets/image/qmg-5362-hdr.jpg')}}" alt="">
                                 <a href="#" class="home__project__slider__item__link">
                                     <span>Can Tho International Airport Station</span>
                                     <p>View detail</p>
                                 </a>
                             </li>
-                            <li class="home__project__slider__item">
+                            <li draggable="false"  class="home__project__slider__item">
+                                <img src="{{asset('assets/image/qmg-5362-hdr.jpg')}}" alt="">
+                                <a href="#" class="home__project__slider__item__link">
+                                    <span>Can Tho International Airport Station</span>
+                                    <p>View detail</p>
+                                </a>
+                            </li>
+                            <li draggable="false"  class="home__project__slider__item">
+                                <img src="{{asset('assets/image/qmg-5362-hdr.jpg')}}" alt="">
+                                <a href="#" class="home__project__slider__item__link">
+                                    <span>Can Tho International Airport Station</span>
+                                    <p>View detail</p>
+                                </a>
+                            </li>
+                            <li draggable="false"  class="home__project__slider__item">
+                                <img src="{{asset('assets/image/qmg-5362-hdr.jpg')}}" alt="">
+                                <a href="#" class="home__project__slider__item__link">
+                                    <span>Can Tho International Airport Station</span>
+                                    <p>View detail</p>
+                                </a>
+                            </li>
+                            <li draggable="false"  class="home__project__slider__item">
+                                <img src="{{asset('assets/image/qmg-5362-hdr.jpg')}}" alt="">
+                                <a href="#" class="home__project__slider__item__link">
+                                    <span>Can Tho International Airport Station</span>
+                                    <p>View detail</p>
+                                </a>
+                            </li>
+                            <li draggable="false"  class="home__project__slider__item">
+                                <img src="{{asset('assets/image/qmg-5362-hdr.jpg')}}" alt="">
+                                <a href="#" class="home__project__slider__item__link">
+                                    <span>Can Tho International Airport Station</span>
+                                    <p>View detail</p>
+                                </a>
+                            </li>
+                            <li draggable="false"  class="home__project__slider__item">
+                                <img src="{{asset('assets/image/qmg-5362-hdr.jpg')}}" alt="">
+                                <a href="#" class="home__project__slider__item__link">
+                                    <span>Can Tho International Airport Station</span>
+                                    <p>View detail</p>
+                                </a>
+                            </li>
+                            <li draggable="false"  class="home__project__slider__item">
                                 <img src="{{asset('assets/image/qmg-5362-hdr.jpg')}}" alt="">
                                 <a href="#" class="home__project__slider__item__link">
                                     <span>Can Tho International Airport Station</span>
@@ -229,6 +271,7 @@
     {{-- footer --}}
     @include('user.layout.footer')
 
+    <script src="{{asset('assets/js/home.js')}}" defer></script>
 
 </body>
 </html>

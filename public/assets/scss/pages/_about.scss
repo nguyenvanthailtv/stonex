@@ -118,4 +118,60 @@
 
         }
     }
+
+
+    &__vision{
+        @extend %paddingElement;
+        overflow: hidden;
+        background:center / cover no-repeat  url('../image/group-16.png');
+
+        &__content{
+            p{
+                @include elementTitle($white-color);
+                margin: 20px 0;
+            }
+
+            span{
+                text-transform: uppercase;
+                color: $white-color;
+                font-weight: 600;
+                font-size: 1.4rem;
+                line-height: 150%;
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+
+    &__core-value{
+        @extend %paddingElement;
+        overflow: hidden;
+
+        &__title{
+            @include elementTitle($text-color-2);
+            margin: 20px 0;
+        }
+
+        &__content{
+            margin: 30px 0;
+
+            &__svg{
+                height: 50px;
+                display: flex;
+                align-items: center;
+            }
+
+            h3{
+                font-size: 2rem;
+                line-height: 150%;
+                color: rgba($black-color,0.8);
+                font-weight: 600;
+                letter-spacing: 0.5px;
+                margin: 8px 0;
+            }
+
+            p{
+                @include elementText($text-color-3);
+            }
+        }
+    }
 }

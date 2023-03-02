@@ -62,21 +62,50 @@
     display: block;
 }
 
-@mixin elementBtn($Color,$bgColor,$bdColor){
+@mixin elementBtn($Color,$bgColor){
     font-size: 1.6rem;
     text-transform: uppercase;
     color: $Color;
     background-color: $bgColor;
     padding: 14px 28px;
     font-weight: 600;
-    border: 1.6px solid $bdColor;
     display: inline-block;
     transition: all 0.6s ease;
     border-radius: 2px;
-    &:hover{
-        color: $primary-color-2;
-        background-color: $Color;
+    overflow: hidden;
+    position: relative;
+
+    &::before{
+        position: absolute;
+        content: "";
+        display: block;
+        width: 150px;
+        top: 0;
+        left: 120%;
+        bottom: 0;
+        transform: skew(40deg);
+        background-color: rgba($black-color, 0.4);
+        transition: all 0.5s;
     }
+
+    &:hover{
+        &::before{
+            left: 60%;
+        }
+    }
+}
+
+@mixin elementBtn2($Color,$bgColor){
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: $Color;
+    background-color: $bgColor;
+    border: 1.5px solid $Color;
+    padding: 14px 28px;
+    font-weight: 600;
+    display: inline-block;
+    border-radius: 2px;
+    overflow: hidden;
 }
 
 

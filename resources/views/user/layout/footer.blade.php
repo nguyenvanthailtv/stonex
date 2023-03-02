@@ -78,4 +78,3 @@
 
 {{-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> --}}
 <script src="{{asset('assets/js/style.js')}}"></script>
-<script src="{{asset('assets/js/home.js')}}"></script>

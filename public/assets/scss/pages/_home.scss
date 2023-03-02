@@ -180,7 +180,7 @@
                 }
 
                 &__btn>a{
-                    @include elementBtn($white-color,$primary-color-2,$primary-color-2)
+                    @include elementBtn($white-color,$primary-color-2)
                 }
 
                 &>img{
@@ -280,7 +280,7 @@
                         }
 
                         &__btn > a{
-                            @include elementBtn($white-color,$primary-color-2,$primary-color-2);
+                            @include elementBtn($white-color,$primary-color-2);
 
                         }
                     }
@@ -331,22 +331,27 @@
             margin-right: -200px;
 
             &__item{
+                min-width: 300px;
+                height: 300px;
                 margin: 0 10px;
                 display: block;
                 position: relative;
+                transition: all 0.5s ease;
 
                 &>img{
                     width: 100%;
+                    height: 100%;
                     display: block;
-                    display: block;
+                    object-fit:cover;
                 }
 
                 &__link{
+                    display: none;
                     color: $text-color-3;
                     transition: all 0.3s;
                     cursor: pointer;
                     padding: 20px 0;
-                    display: block;
+                    // display: block;
 
                     @include xl{
                         position: absolute;
@@ -414,6 +419,14 @@
                         @include xl{
                             font-weight: 500;
                         }
+                    }
+                }
+
+                &.active{
+                    min-width: 600px;
+                    transition: all 0.5s ease;
+                    .home__project__slider__item__link{
+                        display: block;
                     }
                 }
             }
